@@ -3,7 +3,7 @@ import json
 import plotly.graph_objects as go
 
 type_of_token = ["bpe", "wordpiece", "unigram"]
-json_directory = "data/output/"
+json_directory = "data/output/30k/"
 
 bpe_set = set()
 wordpiece_set = set()

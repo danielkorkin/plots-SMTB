@@ -3,7 +3,7 @@ import json
 from templates_charts.venn_diagram import venn_to_plotly
 
 type_of_token = ["bpe", "wordpiece", "unigram"]
-json_directory = "data/output/"
+json_directory = "data/output/30k/"
 
 bpe_set = set()
 wordpiece_set = set()
@@ -23,4 +23,4 @@ for token_type in type_of_token:
             unigram_set = vocab
 
 s = [bpe_set, wordpiece_set, unigram_set]
-venn_to_plotly(s, ("BPE", "Wordpiece", "Unigram"), renderer="iframe")
+venn_to_plotly(s, ("BPE", "Wordpiece", "Unigram"), renderer="browser")
